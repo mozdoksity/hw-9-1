@@ -68,9 +68,26 @@ DBPassword=password
 
 #### Требования к результаты 
 1. Приложите в файл README.md скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
+<img src = "img/9-1-2_1" width = 100%>
 2. Приложите в файл README.md скриншот лога zabbix agent, где видно, что он работает с сервером
+<img src = "img/9-1-2_2" width = 100%>
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
+<img src = "img/9-1-2_3" width = 100%>
 4. Приложите в файл README.md текст использованных команд в GitHub
+
+```
+sudo -i
+apt update
+wget https://repo.zabbix.com/zabbix/6.4/debian/pool/main/z/zabbix-release/zabbix-release_6.4-1+debian11_all.deb
+dpkg -i zabbix-release_6.4-1+debian11_all.deb
+apt update
+apt install zabbix-agent
+sed -i 's/Server=127.0.0.1/Server=51.250.97.204/g' /etc/zabbix/zabbix_agentd.conf
+# На машине с Zabbix Server добавил 'Server=127.0.0.1,51.250.97.204' в файл /etc/zabbix/zabbix_agentd.conf
+systemctl restart zabbix-agent
+systemctl enable zabbix-agent
+```
+
 
 ---
 ## Задание 3 со звёздочкой*
