@@ -68,11 +68,11 @@ DBPassword=password
 
 #### Требования к результаты 
 1. Приложите в файл README.md скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
-<img src = "img/9-1-2_1" width = 100%>
+<img src = "img/9-1-2_1.jpg" width = 100%>
 2. Приложите в файл README.md скриншот лога zabbix agent, где видно, что он работает с сервером
-<img src = "img/9-1-2_2" width = 100%>
+<img src = "img/9-1-2_2.jpg" width = 100%>
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
-<img src = "img/9-1-2_3" width = 100%>
+<img src = "img/9-1-2_1.jpg" width = 100%>
 4. Приложите в файл README.md текст использованных команд в GitHub
 
 ```
